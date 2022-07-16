@@ -9,7 +9,7 @@ const email = <FontAwesomeIcon icon={faEnvelope} />
 
 const MainComponent = () => {
     return (
-        <main className='flex-grow p-8 w-full flex flex-col justify-center items-center
+        <main className=' flex-grow p-8 w-full flex flex-col justify-center items-center
         sm:flex-col lg:flex-row '>
 
             <div className="">

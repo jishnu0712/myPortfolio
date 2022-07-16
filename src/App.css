@@ -1,11 +1,16 @@
 * {
     box-sizing: border-box;
 }
-
+html,body{
+    --tw-bg-opacity: 1;
+    background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
 .header-links-container{
     max-width: 800px;
 }
-
+.box{
+    max-width: 800px;
+}
 @media (min-width: 1400px) {
     body{
         font-size: 20px;
