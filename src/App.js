@@ -1,6 +1,6 @@
 import './App.css';
-import Footer from './Footer';
-import Header from './Header';
+import Footer from './components/Footer';
+import Header from './components/Header';
 import MainComponent from './pages/MainComponent';
 import About from './pages/About'
 import { Route, Routes } from "react-router-dom";

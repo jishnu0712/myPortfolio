@@ -1,13 +1,14 @@
-import React from 'react';
+import { React, useContext } from 'react';
 import { NavLink } from "react-router-dom";
+import { UserContext } from '../context/context';
 
 const Header = () => {
+  const myContext = useContext(UserContext)
+  console.log(myContext)
   return (
     <header className='border-2 shadow py-6 flex  justify-center select-none'>
-
       <div className="header-links-container  w-3/4  font-bold text-gray-900 
          flex flex-wrap justify-evenly items-center ">
-
         <NavLink
           to="/"
           className={(isActive) => (isActive.isActive ? 'border-b-4 border-sky-400' : '')}
@@ -33,12 +34,10 @@ const Header = () => {
         >
           <p className="portfolio cursor-pointer">portfolio</p>
         </NavLink>
-
-
+        {/* dark mode toggle */}
         <div className="circle w-6 h-6 bg-gray-900 rounded-full cursor-pointer hover:shadow hover:shadow-cyan-300"></div>
-
       </div>
-    </header >
+    </header>
   );
 };
 
