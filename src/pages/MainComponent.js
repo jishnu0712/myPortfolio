@@ -11,7 +11,7 @@ const MainComponent = () => {
     return (
         <main className='flex-grow p-8 w-full flex flex-col justify-center items-center sm:flex-col lg:flex-row '>
 
-            <img src=".\img\WhatsApp Image 2022-06-05 at 9.23.01 PM.jpeg" alt="" className=" img-circle w-48 h-48 sm:w-64 sm:h-64 lg:w-96 lg:h-96 rounded-full bg-blue-300 shadow-xl border-8 border-gray-200"/>
+            <img src={ process.env.PUBLIC_URL + "/img/myImg.jpeg"} alt="profile cover" className=" img-circle w-48 h-48 sm:w-64 sm:h-64 lg:w-96 lg:h-96 rounded-full bg-blue-300 shadow-xl border-8 border-gray-200"/>
 
             <div className="intro m-16 select-none ">
 

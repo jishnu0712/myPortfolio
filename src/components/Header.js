@@ -7,13 +7,12 @@ const Header = () => {
   console.log(myContext)
   return (
     <header className='border-2 shadow py-6 flex  justify-center select-none'>
-      <div className="header-links-container  w-3/4  font-bold text-gray-900 
-         flex flex-wrap justify-evenly items-center ">
+      <div className="header-links-container  w-3/4  font-bold text-gray-900 flex flex-wrap justify-evenly items-center ">
         <NavLink
           to="/"
           className={(isActive) => (isActive.isActive ? 'border-b-4 border-sky-400' : '')}
         >
-          <p className="home cursor-pointer ">home</p>
+          <p className="home cursor-pointer">home</p>
         </NavLink>
 
         <NavLink
