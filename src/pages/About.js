@@ -1,5 +1,3 @@
-import React from 'react';
-
 const boxClass            = "box mb-16 w-3/4 bg-gray-900 rounded-lg shadow-xl";
 const boxHeaderClass      = "box-header bg-gray-500 h-10 rounded-t-lg py-3 px-4";
 const redButtonClass      = "red rounded-full bg-red-500 h-4 w-4  mx-1";

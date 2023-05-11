@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faEarthAsia, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { UserContext } from '../context/context';
+import { theme } from '../Theme/Theme';
 
 
 const coffee = <FontAwesomeIcon icon={faCoffee} />
@@ -8,8 +10,10 @@ const asia   = <FontAwesomeIcon icon={faEarthAsia} />
 const email  = <FontAwesomeIcon icon={faEnvelope} />
 
 const MainComponent = () => {
+    const myContext = useContext(UserContext)
+  const { darkMode, setDarkMode } = myContext
     return (
-        <main className='flex-grow p-8 w-full flex flex-col justify-center items-center sm:flex-col lg:flex-row '>
+        <main className={`flex-grow p-8 w-full flex flex-col justify-center items-center sm:flex-col lg:flex-row ${darkMode ? theme['dark'] : ''}`}>
 
             <img src={ process.env.PUBLIC_URL + "/img/myImg.jpeg"} alt="profile cover" className=" img-circle w-48 h-48 sm:w-64 sm:h-64 lg:w-96 lg:h-96 rounded-full bg-blue-300 shadow-xl border-8 border-gray-200"/>
 
