@@ -11,7 +11,7 @@ const email  = <FontAwesomeIcon icon={faEnvelope} />
 
 const MainComponent = () => {
     const myContext = useContext(UserContext)
-  const { darkMode, setDarkMode } = myContext
+  const { darkMode } = myContext
     return (
         <main className={`flex-grow p-8 w-full flex flex-col justify-center items-center sm:flex-col lg:flex-row ${darkMode ? theme['dark'] : ''}`}>
 
