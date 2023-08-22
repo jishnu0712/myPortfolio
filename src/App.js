@@ -7,6 +7,7 @@ import { Route, Routes } from "react-router-dom";
 import Portfolio from './pages/Portfolio';
 import { UserContext } from './context/context';
 import { useState } from 'react';
+import NotFound from './pages/NotFound';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path='/myPortfolio' element={<MainComponent />} />
           <Route path='/about' element={<About />} />
           <Route path='/portfolio' element={<Portfolio />} />
+          <Route path='*' element={<NotFound />}/>
         </Routes>
         <Footer />
       </UserContext.Provider>
