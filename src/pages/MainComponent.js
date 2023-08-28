@@ -34,7 +34,7 @@ const MainComponent = () => {
                     <li className={classNames.listItem}>{email}<p className={`pl-4 inline-block ${classNames.listItem}`}>jishnu.dev.roy@gmail.com</p></li>
                 </ul>
                 <div className="social-links">
-                    {/* Add your social links here */}
+                    {/* social links to be added here */}
                 </div>
             </div>
         </main>
