@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import { UserContext } from '../context/context';
-import { theme } from '../Theme/Theme';
 
 
 const portFolioBoxClass = `portfolio-box py-2 px-4 flex flex-col justify-center items-center w-7/12 Asm:w-5/12  2xl:w-1/4`;
