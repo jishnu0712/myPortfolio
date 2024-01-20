@@ -12,7 +12,7 @@ const projects = [
     },
     {
         name: "Quizzler",
-        git: "google.com",
+        git: "https://github.com/jishnu0712/Quizzler.git",
         live: ""
     },
     {
