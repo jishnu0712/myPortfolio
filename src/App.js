@@ -13,7 +13,7 @@ import NotFound from './pages/NotFound';
 function App() {
   const [darkMode, setDarkMode] = useState(false)
   return (
-    <div className="container h-screen min-w-full flex flex-col">
+    <div className={`container h-screen min-w-full flex flex-col ${darkMode ? "bg-gray-900" : ""}`}>
 
       <UserContext.Provider value={{darkMode, setDarkMode}}>
         <Header />
