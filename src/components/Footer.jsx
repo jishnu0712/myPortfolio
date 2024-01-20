@@ -7,7 +7,7 @@ function Footer(props) {
   const { darkMode } = myContext
   const date = new Date()
   return (
-    <footer className={`flex bg-gray-100 justify-center p-6 shadow select-none ${darkMode ? theme['dark'] : ''}`}>
+    <footer className={`flex  justify-center p-6 shadow select-none ${darkMode ? theme['dark'] : 'bg-gray-100'}`}>
       <p className='text-xs text-gray-400 '>Jishnu Dev Roy @ {date.getFullYear()}</p>
     </footer>
   );
