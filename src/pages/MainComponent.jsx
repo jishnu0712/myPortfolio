@@ -48,7 +48,7 @@ const MainComponent = () => {
         <h1 className={classNames.headline}>
           Hi, I'm <span className={classNames.gradientText}>Jishnu Dev</span>
         </h1>
-        <h3 className={classNames.subHeadline}>I'm a Full-Stack Developer.</h3>
+        <h3 className={classNames.subHeadline}>I'm a MERN Stack Developer.</h3>
         <ul
           className={`details text-base font-mono mt-4 tracking-widest ${classNames.listItem}`}
         >
@@ -67,7 +67,7 @@ const MainComponent = () => {
           <li className={classNames.listItem}>
             {email}
             <p className={`pl-4 inline-block ${classNames.listItem}`}>
-              jishnu.dev.roy@gmail.com
+              jishnudevroy@gmail.com
             </p>
           </li>
         </ul>

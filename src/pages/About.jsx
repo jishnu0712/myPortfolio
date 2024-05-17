@@ -55,11 +55,12 @@ function About() {
                     javascript<br />
                     React.js<br />
                     Node.js<br />
-                    html5<br />
-                    css3<br />
+                    MySQL<br />
+                    MongoDB<br />
+                    html<br />
+                    css<br />
                     tailwind CSS<br />
                     git<br />
-                    github<br />
                     bootstrap<br />
                 </p>
             </Box>
@@ -72,6 +73,7 @@ function About() {
                     🎭theater<br />
                     🎥movies<br />
                     🌶cooking<br />
+                    🥾trekking<br />
                 </p>
             </Box>
         </div>
