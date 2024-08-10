@@ -11,6 +11,30 @@ html,body{
 .box{
     max-width: 800px;
 }
+
+body {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    accent-color: #080;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    max-width: 65ch;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+.portfolio-container {
+    max-width: clamp(520px, 90%, 1200px);
+    margin: 0 auto;
+}
+
 @media (min-width: 1400px) {
     body{
         font-size: 20px;

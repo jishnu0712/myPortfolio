@@ -1,11 +1,12 @@
 import React, { useContext } from 'react';
 import { UserContext } from '../context/context';
 import ProjectDetailsCard from '../components/ProjectDetailsCard';
-import projects from '../data/projects';
+
+import projectsDetailsData from '../data/projects';
 
 
 function Portfolio() {
-    const ProjectComponentList = projects.map(item => {
+    const ProjectComponentList = projectsDetailsData.map(item => {
         return ProjectDetailsCard(item)
     })
     const { darkMode } = useContext(UserContext);

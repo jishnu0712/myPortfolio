@@ -7,7 +7,6 @@ export default function ProjectDetailsCard(project) {
 
     const { darkMode } = useContext(UserContext);
 
-    // tailwind classes
     const portFolioBoxClass = `portfolio-box py-2 px-4 flex flex-col justify-center items-center 
     w-7/12 sm:w-5/12  2xl:w-1/4 border-2 border-gray-200`;
     const projectTitleClass = `title text-sm font-bold  tracking-widest mb-8 ${darkMode ? 'text-gray-300' : 'text-gray-900'}`;

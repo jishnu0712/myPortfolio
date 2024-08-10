@@ -37,6 +37,7 @@ const MainComponent = () => {
       darkMode ? "text-gray-300" : "text-gray-600"
     }`,
   };
+
   return (
     <main className={classNames.container}>
       <img
@@ -46,9 +47,9 @@ const MainComponent = () => {
       />
       <div className={classNames.intro}>
         <h1 className={classNames.headline}>
-          Hi, I'm <span className={classNames.gradientText}>Jishnu Dev</span>
+          Hi, I'm <span className={classNames.gradientText}>Jishnu</span>
         </h1>
-        <h3 className={classNames.subHeadline}>I'm a MERN Stack Developer.</h3>
+        <h3 className={classNames.subHeadline}>{process.env.REACT_APP_SUB_HEADLINE}</h3>
         <ul
           className={`details text-base font-mono mt-4 tracking-widest ${classNames.listItem}`}
         >
