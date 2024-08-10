@@ -2,6 +2,7 @@
   "name": "mypage-tailwind",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jishnu0712.github.io/myPortfolio",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
