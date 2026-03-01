@@ -1,10 +1,17 @@
 import ProjectDetailsCard from '../components/ProjectDetailsCard';
 import projectsDetailsData from '../data/projects';
+import SEO from '../components/SEO';
 
 function Portfolio() {
   return (
-    <main className="flex-grow px-6 py-16 lg:py-24">
-      <div className="max-w-5xl mx-auto">
+    <>
+      <SEO
+        title="Portfolio"
+        description="Explore projects by Jishnu Dev Roy — backend systems, distributed services, and full-stack applications."
+        path="/portfolio"
+      />
+      <main className="flex-grow px-6 py-16 lg:py-24">
+        <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white tracking-tight">
           Portfolio
         </h2>
@@ -15,9 +22,10 @@ function Portfolio() {
           {projectsDetailsData.map(project => (
             <ProjectDetailsCard key={project.name} {...project} />
           ))}
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </>
   );
 }
 

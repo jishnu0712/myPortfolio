@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faLocationDot, faMugHot } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import SEO from '../components/SEO';
 
 const details = [
   { icon: faMugHot, text: 'Fueled by coffee' },
@@ -16,8 +17,10 @@ const socials = [
 
 const MainComponent = () => {
   return (
-    <main className="flex-grow flex items-center justify-center px-6 py-16 lg:py-24">
-      <div className="max-w-4xl w-full flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+    <>
+      <SEO path="/" />
+      <main className="flex-grow flex items-center justify-center px-6 py-16 lg:py-24">
+        <div className="max-w-4xl w-full flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
         <img
           src={import.meta.env.BASE_URL + 'img/myImg.jpeg'}
           alt="Jishnu Dev Roy"
@@ -60,8 +63,9 @@ const MainComponent = () => {
             ))}
           </div>
         </div>
-      </div>
-    </main>
+        </div>
+      </main>
+    </>
   );
 };
 

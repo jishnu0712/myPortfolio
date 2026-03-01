@@ -1,3 +1,5 @@
+import SEO from '../components/SEO';
+
 const { VITE_NAME, VITE_ROLE, VITE_CAREER_START_DATE, VITE_ABOUT_DESCRIPTION, VITE_WHOAMI_TEXT, VITE_INTERESTS_TEXT, VITE_TECH_STACKS } = import.meta.env;
 
 const skills = VITE_TECH_STACKS.split(', ');
@@ -21,7 +23,13 @@ const hobbies = [
 
 function About() {
   return (
-    <main className="flex-grow px-6 py-16 lg:py-24">
+    <>
+      <SEO
+        title="About"
+        description="Learn about Jishnu Dev Roy — Backend Software Engineer with experience in scalable systems, distributed services, Node.js, PostgreSQL, Redis, and AWS."
+        path="/about"
+      />
+      <main className="flex-grow px-6 py-16 lg:py-24">
       <div className="max-w-3xl mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white tracking-tight">
           About Me
@@ -102,6 +110,7 @@ function About() {
         </div>
       </div>
     </main>
+    </>
   );
 }
 
