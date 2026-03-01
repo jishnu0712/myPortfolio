@@ -1,12 +1,22 @@
-
+import { Link } from 'react-router-dom';
 
 const NotFound = () => {
-    return (
-        <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
-            <h1 className="text-3xl font-bold mb-4">404 - Page Not Found</h1>
-            <p className="text-gray-600">The page you are looking for does not exist.</p>
-        </div>
-    )
-}
+  return (
+    <main className="flex-grow flex flex-col items-center justify-center px-6 py-24">
+      <h1 className="text-8xl font-extrabold text-indigo-600 dark:text-indigo-400">
+        404
+      </h1>
+      <p className="mt-4 text-xl text-gray-600 dark:text-gray-400">
+        Page not found
+      </p>
+      <Link
+        to="/"
+        className="mt-8 px-6 py-3 rounded-lg bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition-colors"
+      >
+        Go Home
+      </Link>
+    </main>
+  );
+};
 
-export default NotFound
+export default NotFound;

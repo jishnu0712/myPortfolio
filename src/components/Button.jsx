@@ -1,18 +1,18 @@
-export default function Button({ darkMode, name, id, onClick, disabled, children }) {
+export default function Button({ children, onClick, disabled, variant = 'primary', ...props }) {
+  const base = 'px-5 py-2.5 text-sm font-medium rounded-lg transition-colors cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed';
+  const variants = {
+    primary: 'bg-indigo-600 text-white hover:bg-indigo-700 disabled:hover:bg-indigo-600',
+    outline: 'border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 disabled:hover:bg-transparent',
+  };
 
-    const buttonClass = `py-2 px-4 ml-4 mb-4  border-gray-400
-    rounded-full text-lg tracking-wider  shadow-lg ${disabled ? "text-gray-800" : "border-2 text-sky-800 hover:text-sky-600 font-bold"} ${darkMode ? 'text-gray-300' : ''}`;
-
-
-    return (
-        <button
-            className={buttonClass}
-            name={name}
-            id={id}
-            onClick={onClick}
-            disabled={disabled}
-        >
-            {children}
-        </button>
-    )
+  return (
+    <button
+      className={`${base} ${variants[variant]}`}
+      onClick={onClick}
+      disabled={disabled}
+      {...props}
+    >
+      {children}
+    </button>
+  );
 }
