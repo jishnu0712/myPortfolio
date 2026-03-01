@@ -4,16 +4,67 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta name="description" content="Welcome to Jishnu Dev Roy's portfolio" />
+    <meta name="description" content="Jishnu Dev Roy — Backend Software Engineer specializing in scalable systems, distributed services, crypto payments, PostgreSQL, Redis, and AWS." />
+    <meta name="author" content="Jishnu Dev Roy" />
+    <link rel="canonical" href="https://jishnu0712.github.io/myPortfolio/" />
+
+    <!-- Open Graph (fallback for pages before JS loads) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jishnu0712.github.io/myPortfolio/" />
+    <meta property="og:title" content="Jishnu Dev Roy — Backend Software Engineer" />
+    <meta property="og:description" content="Backend Software Engineer specializing in scalable systems, distributed services, crypto payments, PostgreSQL, Redis, and AWS." />
+    <meta property="og:image" content="https://jishnu0712.github.io/myPortfolio/img/myImg.jpeg" />
+    <meta property="og:site_name" content="Jishnu Dev Roy" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jishnu Dev Roy — Backend Software Engineer" />
+    <meta name="twitter:description" content="Backend Software Engineer specializing in scalable systems, distributed services, crypto payments, PostgreSQL, Redis, and AWS." />
+    <meta name="twitter:image" content="https://jishnu0712.github.io/myPortfolio/img/myImg.jpeg" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Jishnu Dev Roy",
+        "url": "https://jishnu0712.github.io/myPortfolio/",
+        "image": "https://jishnu0712.github.io/myPortfolio/img/myImg.jpeg",
+        "jobTitle": "Backend Software Engineer",
+        "sameAs": [
+          "https://github.com/jishnu0712",
+          "https://www.linkedin.com/in/jishnudevroy/"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bengaluru",
+          "addressCountry": "IN"
+        }
+      }
+    </script>
+
     <link rel="manifest" href="/myPortfolio/manifest.json" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <title>Jishnu Dev Roy</title>
-    <script type="module" crossorigin src="/myPortfolio/assets/index-ChicR5PG.js"></script>
+    <title>Jishnu Dev Roy — Backend Software Engineer</title>
+    <script type="module" crossorigin src="/myPortfolio/assets/index-CMpMDEOQ.js"></script>
     <link rel="stylesheet" crossorigin href="/myPortfolio/assets/index-D17Zs0YD.css">
   </head>
   <body>
+    <!-- Restore SPA route from GitHub Pages 404 redirect -->
+    <script>
+      (function(l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search.slice(1).split('&').map(function(s) {
+            return s.replace(/~and~/g, '&');
+          }).join('?');
+          window.history.replaceState(null, null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location));
+    </script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>
