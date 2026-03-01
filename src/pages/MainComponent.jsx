@@ -4,7 +4,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const details = [
   { icon: faMugHot, text: 'Fueled by coffee' },
-  { icon: faLocationDot, text: 'Based in India' },
+  { icon: faLocationDot, text: 'Whitefield, Bengaluru' },
   { icon: faEnvelope, text: 'jishnudevroy@gmail.com' },
 ];
 

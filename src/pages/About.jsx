@@ -18,10 +18,11 @@ function About() {
 
         <div className="mt-8 p-6 rounded-2xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-base sm:text-lg">
-            Greetings! I&apos;m Jishnu, a MERN stack Developer. I am an energetic
-            person, an effective communicator, and a quick learner. I have been
-            part of some very good projects and am always eager to take on new
-            challenges.
+            Greetings! I&apos;m Jishnu, a Backend Software Engineer with 3.8 years
+            of experience building scalable systems handling high-volume
+            transactions. I specialize in distributed services, crypto payments,
+            PostgreSQL, Redis, and AWS. I&apos;ve worked across iGaming, Insurance,
+            FinTech, and Health domains — always eager to take on new challenges.
           </p>
         </div>
 
@@ -75,7 +76,7 @@ function About() {
                 <span className="text-gray-500">$</span> whoami
               </p>
               <p className="mt-1 text-gray-400">
-                Full-stack developer who loves building things for the web.
+                Backend engineer who builds scalable, high-volume systems.
               </p>
             </div>
             <div>
@@ -86,7 +87,7 @@ function About() {
                 <span className="text-gray-500">$</span> cat interests.txt
               </p>
               <p className="mt-1 text-gray-400">
-                React, Node.js, clean code, coffee, and open source.
+                Node.js, PostgreSQL, Redis, AWS, distributed systems, and coffee.
               </p>
             </div>
           </div>

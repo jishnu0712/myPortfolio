@@ -1,54 +1,46 @@
 const projects = [
     {
-        name: "Care - RMS",
-        description: [`A backend system for telecallers to keep track of leads from assignment to payment.`,
-            `Setup CRONS, Automailers to send various reports to internal teams.`,
-            `Added Notification to callers for timely disposition of leads that increased efficiency by 42%.`,
-            `Designed and developed user feedback system using Gupshup API.`,
-            `An whatsapp/SMS/Email triggered to end users with a link to provide feedbacks of their last call.`,
-            ` Maintained Git repo, build deployment, code cleanup.`,
+        name: "No Limit (Crypto Casino)",
+        description: [
+            "A US-based crypto casino platform built with Node.js and React.js.",
+            "Integrated Fireblocks as the crypto payments provider for secure digital asset transactions.",
+            "Set up AWS Nitro cosigner for seamless and secure payment processing.",
+            "Implemented wallet-based authentication using MetaMask, Coinbase Wallet, and Trust Wallet.",
         ],
         git: "",
         live: ""
     },
     {
-        name: "Green Brilliance",
-        description: ["A project for ordering and tracking the status of solar systems.",
-            "Redux is used to manage component state.",
-            "Delivered a well-designed dashboard to production within a short timeframe.",
-            "Central features include solar system ordering, status tracking, and financial management through EMI and loans.",
-            "Successfully delivered a production-ready dashboard, showcasing efficiency and timely project completion.",
+        name: "The Money Factory (Online Casino)",
+        description: [
+            "A US-based online casino handling ~1 crore daily transactions with a user base of 400K+.",
+            "Reduced redemption processing time by implementing real-time reporting for accurate GGR and NGR calculation.",
+            "Designed and implemented 'Whale Alerts' to proactively monitor high-value player activity.",
+            "Integrated game providers like Mascot Games and Mancala Gaming.",
         ],
         git: "",
         live: ""
     },
     {
-        name: "Commission Management System",
-        description: ["Developed a commission tracking system for doctors' referrals in a reputed Nursing Home.",
-            "Utilized Laravel 10 framework and followed the MVC architecture.",
-            "Implemented charts using Chart.js to visualize individual doctor and department commissions.",
-            "The system includes features for data analysis and allows for downloading commission-related data.",
-            "Designed role-based access control for various modules, ensuring that users have appropriate permissions.",
-            "Currently in use by the nursing home, indicating its reliability and practicality.",
-            "Key technologies: Laravel 10, MVC architecture, Chart.js.",
-            "Allows management to track commissions efficiently and make data-driven decisions.",
+        name: "SOSTOS (NASA-funded Health AI)",
+        description: [
+            "A platform by Sostos Inc. providing AI, big data, and health analytics for precision medicine.",
+            "Designed for comprehensive drug repositioning discovery — identifying drugs suited to an individual's genetic profile.",
+            "Responsible for designing and developing the backend architecture.",
+            "Designed data insertion scripts for automated drug data insertions and file linking using Strapi custom scripts.",
         ],
-        git: "https://github.com/jishnu0712/commision-management-system",
+        git: "",
         live: ""
     },
     {
-        name: "Baadal",
-        description: ["Developed an elegant weather app using React.js.",
-            "Integrated OpenWeatherAPI as the data source for real-time weather information.",
-            "Implemented input forms in React to allow users to input location details for weather retrieval.",
-            "Utilized the Fetch API to retrieve data from the server asynchronously.",
-            "Incorporated a loader component to display during the data-fetching process, enhancing user experience.",
-            "Mapped the received weather data to a custom weather component for visual presentation.",
-            "Enhanced the user interface using Material UI components for a modern and polished design.",
-            "Leveraged React.js for dynamic and responsive user interactions in the weather app.",
-            "Achieved a seamless integration of weather data, user input, and UI enhancements for a comprehensive user experience."
+        name: "Care Health Insurance - RMS",
+        description: [
+            "India's 2nd largest health insurance provider. The RMS system helps the business team boost policy renewals.",
+            "Engineered and launched CRON-based automation and automailer systems, improving team productivity by 25%.",
+            "Implemented a caller notification system that boosted tele-caller efficiency by 30%.",
+            "Implemented a caller feedback mechanism triggering SMS & WhatsApp feedback messages.",
         ],
-        git: "https://github.com/jishnu0712/Baadal",
+        git: "",
         live: ""
     },
 ]

@@ -4,7 +4,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const socialLinks = [
   { href: 'https://github.com/jishnu0712', icon: faGithub, label: 'GitHub' },
-  { href: 'https://linkedin.com/in/jishnu0712', icon: faLinkedin, label: 'LinkedIn' },
+  { href: 'https://www.linkedin.com/in/jishnudevroy/', icon: faLinkedin, label: 'LinkedIn' },
   { href: 'mailto:jishnudevroy@gmail.com', icon: faEnvelope, label: 'Email' },
 ];
 
