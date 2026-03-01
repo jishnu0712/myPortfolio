@@ -1,4 +1,15 @@
-const skills = import.meta.env.VITE_TECH_STACKS.split(', ');
+const { VITE_NAME, VITE_ROLE, VITE_CAREER_START_DATE, VITE_ABOUT_DESCRIPTION, VITE_WHOAMI_TEXT, VITE_INTERESTS_TEXT, VITE_TECH_STACKS } = import.meta.env;
+
+const skills = VITE_TECH_STACKS.split(', ');
+
+const CAREER_START = new Date(VITE_CAREER_START_DATE);
+
+function getYearsOfExperience() {
+  const now = new Date();
+  const diffMs = now - CAREER_START;
+  const years = diffMs / (1000 * 60 * 60 * 24 * 365.25);
+  return Math.round(years * 10) / 10;
+}
 
 const hobbies = [
   { emoji: '\u{1F4D6}', name: 'Reading' },
@@ -18,11 +29,8 @@ function About() {
 
         <div className="mt-8 p-6 rounded-2xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-base sm:text-lg">
-            Greetings! I&apos;m Jishnu, a Backend Software Engineer with 3.8 years
-            of experience building scalable systems handling high-volume
-            transactions. I specialize in distributed services, crypto payments,
-            PostgreSQL, Redis, and AWS. I&apos;ve worked across iGaming, Insurance,
-            FinTech, and Health domains — always eager to take on new challenges.
+            Greetings! I&apos;m {VITE_NAME}, a {VITE_ROLE} with {getYearsOfExperience()} years
+            of experience {VITE_ABOUT_DESCRIPTION}
           </p>
         </div>
 
@@ -70,24 +78,24 @@ function About() {
           <div className="bg-gray-800 dark:bg-gray-900 p-6 font-mono text-sm text-gray-300 space-y-4">
             <div>
               <p>
-                <span className="text-green-400">jishnu@dev</span>
+                <span className="text-green-400">{VITE_NAME.toLowerCase()}@dev</span>
                 <span className="text-gray-500">:</span>
                 <span className="text-blue-400">~</span>
                 <span className="text-gray-500">$</span> whoami
               </p>
               <p className="mt-1 text-gray-400">
-                Backend engineer who builds scalable, high-volume systems.
+                {VITE_WHOAMI_TEXT}
               </p>
             </div>
             <div>
               <p>
-                <span className="text-green-400">jishnu@dev</span>
+                <span className="text-green-400">{VITE_NAME.toLowerCase()}@dev</span>
                 <span className="text-gray-500">:</span>
                 <span className="text-blue-400">~</span>
                 <span className="text-gray-500">$</span> cat interests.txt
               </p>
               <p className="mt-1 text-gray-400">
-                Node.js, PostgreSQL, Redis, AWS, distributed systems, and coffee.
+                {VITE_INTERESTS_TEXT}
               </p>
             </div>
           </div>
