@@ -1,68 +1,98 @@
-import { Fragment, useContext } from "react";
-import { UserContext } from "../context/context";
-import { theme } from "../Theme/Theme";
+const skills = import.meta.env.VITE_TECH_STACKS.split(', ');
 
-import Box from "../components/Box";
-
-const boxContentTextClass =
-  "font-mono text-gray-200 text-2xl leading-relaxed tracking-wider";
-
-
+const hobbies = [
+  { emoji: '\u{1F4D6}', name: 'Reading' },
+  { emoji: '\u{1F3AD}', name: 'Theater' },
+  { emoji: '\u{1F3A5}', name: 'Movies' },
+  { emoji: '\u{1F336}\u{FE0F}', name: 'Cooking' },
+  { emoji: '\u{1F97E}', name: 'Trekking' },
+];
 
 function About() {
-  const { darkMode } = useContext(UserContext);
   return (
-    <div
-      className={`box-container py-16 flex-grow flex flex-col justify-evenly items-center ${
-        darkMode ? theme["dark"] : ""
-      }`}
-    >
-      <Box>
-        <p className={boxContentTextClass}>
-          <span className="text-green-500"> jishnu_dev_roy $ </span>about jishnu
-          <br />
-          <br />
-          <span className="text-green-500">about jishnu(main) $ </span>
-          Greetings, I’m Jishnu, a MERN stack Developer. I am an energetic
-          person, an effective communicator, and a quick learner. I have been
-          part of some very good projects. Currently looking for a MERN stack
-          developer job.
-        </p>
-      </Box>
-      <Box>
-        <p className={boxContentTextClass}>
-          <span className="text-green-500"> jishnu_dev_roy $ </span>cd
-          skills/tools
-          <br />
-          <br />
-          <span className="text-green-500">skills/tools (main) $</span> ls
-          <br />
-          <span className="text-green-500">Proficient With</span>
-          <br />
-          {process.env.REACT_APP_techStacks.split(', ')?.map( e => <Fragment key={e}>{e}<br/></Fragment>)}
-        </p>
-      </Box>
-      <Box>
-        <p className={boxContentTextClass}>
-          <span className="text-green-500"> jishnu_dev_roy $ </span>cd
-          hobbies/interests
-          <br />
-          <br />
-          <span className="text-green-500">hobbies/interests (main) $ </span>
-          <br />
-          📖reading
-          <br />
-          🎭theater
-          <br />
-          🎥movies
-          <br />
-          🌶cooking
-          <br />
-          🥾trekking
-          <br />
-        </p>
-      </Box>
-    </div>
+    <main className="flex-grow px-6 py-16 lg:py-24">
+      <div className="max-w-3xl mx-auto">
+        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white tracking-tight">
+          About Me
+        </h2>
+
+        <div className="mt-8 p-6 rounded-2xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
+          <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-base sm:text-lg">
+            Greetings! I&apos;m Jishnu, a MERN stack Developer. I am an energetic
+            person, an effective communicator, and a quick learner. I have been
+            part of some very good projects and am always eager to take on new
+            challenges.
+          </p>
+        </div>
+
+        <div className="mt-12">
+          <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-6">
+            Skills &amp; Tools
+          </h3>
+          <div className="flex flex-wrap gap-3">
+            {skills.map(skill => (
+              <span
+                key={skill}
+                className="px-4 py-2 rounded-full text-sm font-medium bg-indigo-50 dark:bg-indigo-950/50 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-12">
+          <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-6">
+            Hobbies &amp; Interests
+          </h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+            {hobbies.map(hobby => (
+              <div
+                key={hobby.name}
+                className="flex items-center gap-3 p-4 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 hover:border-indigo-300 dark:hover:border-indigo-700 transition-colors"
+              >
+                <span className="text-2xl">{hobby.emoji}</span>
+                <span className="text-gray-700 dark:text-gray-300 font-medium">
+                  {hobby.name}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-12 rounded-2xl overflow-hidden shadow-xl">
+          <div className="bg-gray-700 dark:bg-gray-800 px-4 py-3 flex items-center gap-2">
+            <div className="w-3 h-3 rounded-full bg-red-500"></div>
+            <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+            <div className="w-3 h-3 rounded-full bg-green-500"></div>
+          </div>
+          <div className="bg-gray-800 dark:bg-gray-900 p-6 font-mono text-sm text-gray-300 space-y-4">
+            <div>
+              <p>
+                <span className="text-green-400">jishnu@dev</span>
+                <span className="text-gray-500">:</span>
+                <span className="text-blue-400">~</span>
+                <span className="text-gray-500">$</span> whoami
+              </p>
+              <p className="mt-1 text-gray-400">
+                Full-stack developer who loves building things for the web.
+              </p>
+            </div>
+            <div>
+              <p>
+                <span className="text-green-400">jishnu@dev</span>
+                <span className="text-gray-500">:</span>
+                <span className="text-blue-400">~</span>
+                <span className="text-gray-500">$</span> cat interests.txt
+              </p>
+              <p className="mt-1 text-gray-400">
+                React, Node.js, clean code, coffee, and open source.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   );
 }
 
